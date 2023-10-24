@@ -1,0 +1,64 @@
+body{
+    background-image: url('pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{   
+    text-align: center;
+    color: rgb(31, 7, 7);
+    background-color:rgb(152, 135, 135); 
+}
+nav ul {
+    padding-right: 20px;
+    text-align: left;
+
+}
+nav ul li{
+    display: inline;
+    padding-right: 10px;
+    
+}
+nav ul li a{
+    border:1px solid blue;
+    padding : 5px 10px ;
+    color: blueviolet;
+    border-radius: 5px; 
+    
+  
+}
+nav ul li a:hover{
+    background-color:rgb(133, 133, 142);
+    color:white;
+    text-align: center;
+}
+
+ 
+.one{
+    height: 20vh ;
+    width:100%;
+    padding-top: 10px;
+    text-align: center;
+
+}
+   .containerone{
+    border: 2px  black;
+    border-radius: 8px;
+    background-color: rgb(255, 0, 85);
+    backdrop-filter: blur(10px);
+    color:rgb(17, 1, 1);
+
+   }  
+
+.two{
+    height:20vh;
+    width: 100%;
+    text-align: center;
+    padding-top : 10px;
+
+}
+.three{
+    height:20vh;
+    width: 100%;
+    text-align: center;
+    padding-top :10px;
+}
