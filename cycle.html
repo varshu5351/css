@@ -1,0 +1,56 @@
+<html>
+    <head>
+<style>
+
+.box{
+    height: 180px;
+    width: 180px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 7px;
+    background-image: repeating-linear-gradient(rgb(10, 43, 109), rgb(166, 0, 255) 10%, rgb(58, 0, 128) 15%);
+    animation-direction:normal;
+    animation-name: rotate;
+    animation-duration:1s  ;
+    margin-left: 56%;
+    
+}
+  
+
+@keyframes rotate {
+  0%{transform: rotate(0);}
+  100%{ transform: rotate(360deg);}
+}
+.box2{
+    height: 180px;
+    width: 180px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 7px;
+    background-image: repeating-linear-gradient(rgb(10, 43, 109), rgb(166, 0, 255) 10%, rgb(58, 0, 128) 15%);
+    animation-name: rotate;
+   animation-duration: 1s  ;
+    animation-direction:normal; 
+   margin-left: 20%;
+  
+    
+  
+  }
+  body{
+    background-image: url(./cy.jpg);
+    background-repeat: no-repeat;
+  }
+
+@keyframes rotate {
+  0%{transform: rotate(0);}
+  100%{ transform: rotate(360deg);}}
+</style>
+    </head>
+    <body >
+        <div  class="box" style="position:absolute;  top:54%;"></div>
+        <div class="box2" style="position:absolute;  top:54%;"></div>
+    </body>
+
+</html>
