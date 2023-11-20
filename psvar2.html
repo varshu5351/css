@@ -1,0 +1,61 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // Write a program to calculate salary of an employee given his basic pay 
+            // (to be entered by the user), HRA = 10 per cent of basic pay, 
+            // TA = 5 per cent of basic pay. Define HRA and TA as constants and use them
+            //  to calculate the salary of the employee. 
+            var amt=10000;
+console.log("salary of an employee="+amt);
+var hra=10*amt/100;
+console.log("10% from basic amount ="+hra);
+var ta=5*amt/100;
+console.log("5% from basic amount ="+ta);
+var y=hra+ta;
+console.log("the amount deducted from employee salary="+y);
+var z=amt-y;
+console.log("after deducting the total salary is ="+z);
+
+// Write a program that calculates number of seconds in a day
+var h=24;
+var m=60;
+var s=60;
+console.log("no.of seconds in a day="+h*m*s);
+
+
+// Write a program that prompts users to enter two integers x and y. 
+// The program then calculates and displays x power y.
+var x=2; 
+for (p=1;p<=10;p+=1)
+{
+console.log(x**p)
+} 
+
+// Write a program to calculate simple interest and compound interest
+
+//  simple interest
+
+var p=50000;
+console.log("principal amount="+p);
+var r=2;
+console.log("rate of interest ="+r);
+var t=2*24;
+console.log("duration in months="+t);
+var si=(p*r*t/100);
+console.log("simple interest="+si);
+
+//  compound interest
+
+var p=50000;
+console.log("principal amount="+p);
+var r=2;
+console.log("rate of interest ="+r);
+var t=2*24;
+console.log("duration in months="+t);
+var ci= p*(1+(r/100))**t-p;
+console.log("compound interest="+ci);
+            
+        </script>
+    </body>
+</html>
