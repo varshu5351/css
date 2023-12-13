@@ -17,12 +17,12 @@
 .nav{
    
     top: 0%;
-    width: 1000;
+   
     position: absolute;
     position: fixed;
     margin: 1px;
     height: 8%;
-    text-align: right;
+    text-align: left;
     word-spacing: 40px
     
 } 
@@ -47,8 +47,8 @@ th{
 td{
     background-color: dimgray;
 }
-.dot{ height: 170px;
-  width: 170px;
+.dot{ height: 140px;
+      width: 150px;
   
   border-radius: 50%;
   display: inline-block;} 
@@ -57,14 +57,14 @@ td{
             text-align: center;
             color: darkgoldenrod;
             font-size: large;
-             max-width: 800px;
+            
+            
   } 
-@media screen and (max-width :800px) { 
 
-    body{ background: none;
-
-    }
-}
+@media only screen and (max-width:600px) {
+  
+  .footer, .dot, .nav,.td,.table {
+    width: 100%; } }
 
     </style>
     <head >
@@ -82,9 +82,9 @@ td{
 <h2 style=" position: relative; padding-top:0%; padding-left: 50%; "> A Bit About Me</h2>
 <img src="./hi.jpg" style="border-radius: 50%;  height: 90%; width: 50%; float: left;"  >
 <p>I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively. I am a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talents and skills to meet objectives.</p>
-<span class="dot" style="background-color: aqua;"> <h3 style="padding-left: 47px; padding-top: 50px;">Resume</h3></span>
-<span class="dot" style="background-color: darkorange;"><h3 style="padding-left: 47px; padding-top: 50px;">Projects</h3></span>
-<span class="dot" style="background-color: cornflowerblue;"><h3 style="padding-left: 47px; padding-top: 50px;">Contacts</h3></span>
+<div class="dot" style="background-color: aqua;"> <h3 style="padding-left: 40px; padding-top: 40px;">Resume</h3></div>
+<div class="dot" style="background-color: darkorange;"><h3 style="padding-left: 40px; padding-top: 40px;">Projects</h3></div>
+<div class="dot" style="background-color: cornflowerblue;"><h3 style="padding-left: 40px; padding-top: 40px;">Contacts</h3></div>
 
     </body> 
     <br> 
@@ -130,22 +130,17 @@ td{
 
     </table>
 </div> 
+<br>
+<br>
     
-     <pre> 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br> 
-        <br>
-        <br>
-    <footer  id="contact"> <h4>       phn:8989898989
-                          email:varshitha264@gmail.com 
-                          @2023
-                          powered by varshu
+     
+   <center> <footer  id="contact">   
+     phn:8989898989 <br>
+    email:varshitha264@gmail.com <br>
+      @2023 powered by varshu
                           
     
-    </h4>
+    
 
     </footer>
 </html>
