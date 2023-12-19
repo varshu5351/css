@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+     
+   
+    <style>
+        div{ 
+            background-color:black;
+            display: grid; 
+             gap: 20px 40px;
+            grid-template-columns: auto auto auto auto ;
+            padding: 10px;
+        } 
+        li{
+          background-color:red; 
+          padding: 15px; 
+          text-align: center; 
+          list-style-type: none;
+
+        } 
+        img{
+            width: 100px;
+            height: 100px;
+        } 
+        /* button{ 
+            background-color: blue;
+            color: black;
+
+        } */
+        
+
+
+    </style> 
+
+   
+
+     
+    
+    <script>  
+
+
+        let ar=[{id:1,title:"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        price:109.95,description:"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        category:"men's clothing",
+        image:"https://images.unsplash.com/photo-1622560480654-d96214fdc887?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhZ3xlbnwwfHwwfHx8MA%3D%3D",
+        rating:{rate:3.9,count:120}}, 
+
+        {
+            id:2,"title":"Mens Casual Premium Slim Fit T-Shirts ",
+            price:22.3,"description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            category:"men's clothing",
+            image:"data:image/jpeg;base64,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",
+            rating:{"rate":4.1,"count":259}},  
+
+            {id:3,
+             title:"Mens Cotton Jacket",
+             price:55.99, 
+            description:"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+            category:"men's clothing",
+            image:"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            rating:{"rate":4.7,"count":500}}  ,
+ 
+            {id:4,title:"John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+            price:695,
+            "description":"From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.","category":"jewelery",
+            image:"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg","rating":{"rate":4.6,"count":400}} ]
+
+
+           let div1=document.createElement("div")
+           document.body.appendChild(div1) 
+            
+           for(i=0;i<ar.length;i++){  
+
+            let li=document.createElement("li")
+            div1.appendChild(li) 
+            li.innerText=ar[i].id 
+             
+            let l2=document.createElement("li") 
+            div1.appendChild(l2)
+            l2.innerText=ar[i].description
+             
+
+            let l3=document.createElement("li")
+            div1.appendChild(l3)
+            l3.innerText=ar[i].price 
+
+         
+
+            let but=document.createElement("button")
+            but.addEventListener("click",()=>{
+                window.location.assign("v.png")
+            })  
+
+            but.innerText="see more" 
+
+            div1.appendChild(but) 
+            
+             
+
+
+           }
+                
+     
+    
+       
+
+
+
+
+
+       
+       
+
+   
+      
+
+
+    </script>
+</body>
+</html>
